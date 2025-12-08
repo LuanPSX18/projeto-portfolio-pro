@@ -15,11 +15,21 @@
   box-sizing: border-box;
 }
 
+body.escuro {
+  --fundo-principal: #121212;
+  --texto: #e0e0e0;
+  --texto-inverso: #121212;
+  --destaque: #1e90ff;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #1e1e1e;
+}
+
 body {
   font-family: var(--fonte-principal);
   line-height: 1.5em;
   color: var(--texto);
   background-color: var(--fundo-principal);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -280,6 +290,7 @@ footer a {
 
 footer a:hover {
   color: purple;
+  transition: color 0.7s;
 }
 
 @media screen and (min-width: 768px) { /*tablets e desktops*/
